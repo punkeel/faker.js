@@ -131,10 +131,10 @@ exports.generate = function generate(faker) {
       return rnd(3, 7) + '.' + rnd(0, 1);
     },
     osx: function (delim) {
-      return [10, rnd(5, 10), rnd(0, 9)].join(delim || '.');
+      return [rnd(10, 12), rnd(5, 10), rnd(0, 9)].join(delim || '.');
     },
     chrome: function () {
-      return [rnd(13, 39), 0, rnd(800, 899), 0].join('.');
+      return [rnd(30, 109), 0, rnd(800, 899), 0].join('.');
     },
     presto: function () {
       return '2.9.' + rnd(160, 190);
